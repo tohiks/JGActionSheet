@@ -216,7 +216,7 @@ static BOOL disableCustomEasing = NO;
             UILabel *titleLabel = [[UILabel alloc] init];
             titleLabel.backgroundColor = [UIColor clearColor];
             titleLabel.textAlignment = NSTextAlignmentCenter;
-            titleLabel.font = [UIFont fontWithName:kFontNameOpenSans size:16];;
+            titleLabel.font = [UIFont fontWithName:@"OpenSans" size:16];
             titleLabel.textColor = [UIColor blackColor];
             titleLabel.numberOfLines = 1;
             
@@ -277,7 +277,7 @@ static BOOL disableCustomEasing = NO;
             UILabel *titleLabel = [[UILabel alloc] init];
             titleLabel.backgroundColor = [UIColor clearColor];
             titleLabel.textAlignment = NSTextAlignmentCenter;
-            titleLabel.font = [UIFont fontWithName:kFontNameOpenSans size:16];
+            titleLabel.font = [UIFont fontWithName:@"OpenSans" size:16];
             titleLabel.textColor = [UIColor blackColor];
             titleLabel.numberOfLines = 1;
             
@@ -361,14 +361,14 @@ static BOOL disableCustomEasing = NO;
     UIFont *font = nil;
     
     if (buttonStyle == JGActionSheetButtonStyleDefault) {
-        font = [UIFont fontWithName:kFontNameOpenSans size:16];
+        font = [UIFont fontWithName:@"OpenSans" size:16];
         titleColor = [UIColor blackColor];
         
         backgroundColor = [UIColor whiteColor];;
         borderColor = [UIColor whiteColor];
     }
     else if (buttonStyle == JGActionSheetButtonStyleCancel) {
-        font = [UIFont fontWithName:kFontNameOpenSans size:16];;
+        font = [UIFont fontWithName:@"OpenSans" size:16];;
         titleColor = [UIColor redColor];
         
         backgroundColor = [UIColor whiteColor];
