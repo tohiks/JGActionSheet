@@ -47,7 +47,7 @@
 #define iPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 #endif
 
-#define kHostsCornerRadius 3.0f
+#define kHostsCornerRadius 0f
 
 #define kSpacing 5.0f
 
@@ -216,7 +216,7 @@ static BOOL disableCustomEasing = NO;
             UILabel *titleLabel = [[UILabel alloc] init];
             titleLabel.backgroundColor = [UIColor clearColor];
             titleLabel.textAlignment = NSTextAlignmentCenter;
-            titleLabel.font = [UIFont boldSystemFontOfSize:14.0f];
+            titleLabel.font = [UIFont fontWithName:kFontNameOpenSans size:16];;
             titleLabel.textColor = [UIColor blackColor];
             titleLabel.numberOfLines = 1;
             
@@ -277,7 +277,7 @@ static BOOL disableCustomEasing = NO;
             UILabel *titleLabel = [[UILabel alloc] init];
             titleLabel.backgroundColor = [UIColor clearColor];
             titleLabel.textAlignment = NSTextAlignmentCenter;
-            titleLabel.font = [UIFont boldSystemFontOfSize:14.0f];
+            titleLabel.font = [UIFont fontWithName:kFontNameOpenSans size:16];
             titleLabel.textColor = [UIColor blackColor];
             titleLabel.numberOfLines = 1;
             
@@ -361,18 +361,18 @@ static BOOL disableCustomEasing = NO;
     UIFont *font = nil;
     
     if (buttonStyle == JGActionSheetButtonStyleDefault) {
-        font = [UIFont systemFontOfSize:15.0f];
+        font = [UIFont fontWithName:kFontNameOpenSans size:16];
         titleColor = [UIColor blackColor];
         
-        backgroundColor = [UIColor colorWithWhite:0.95f alpha:1.0f];
-        borderColor = [UIColor colorWithWhite:0.9f alpha:1.0f];
+        backgroundColor = [UIColor whiteColor];;
+        borderColor = [UIColor whiteColor];
     }
     else if (buttonStyle == JGActionSheetButtonStyleCancel) {
-        font = [UIFont boldSystemFontOfSize:15.0f];
-        titleColor = [UIColor blackColor];
+        font = [UIFont fontWithName:kFontNameOpenSans size:16];;
+        titleColor = [UIColor redColor];
         
-        backgroundColor = [UIColor colorWithWhite:0.95f alpha:1.0f];
-        borderColor = [UIColor colorWithWhite:0.9f alpha:1.0f];
+        backgroundColor = [UIColor whiteColor];
+        borderColor = [UIColor whiteColor];
     }
     else if (buttonStyle == JGActionSheetButtonStyleRed) {
         font = [UIFont systemFontOfSize:15.0f];
@@ -409,7 +409,7 @@ static BOOL disableCustomEasing = NO;
 - (JGButton *)makeButtonWithTitle:(NSString *)title style:(JGActionSheetButtonStyle)style {
     JGButton *b = [[JGButton alloc] init];
     
-    b.layer.cornerRadius = 2.0f;
+    b.layer.cornerRadius = 0f;
     b.layer.masksToBounds = YES;
     b.layer.borderWidth = 1.0f;
     
@@ -429,7 +429,7 @@ static BOOL disableCustomEasing = NO;
 }
 
 - (CGRect)layoutForWidth:(CGFloat)width {
-    CGFloat buttonHeight = 40.0f;
+    CGFloat buttonHeight = 55.0f;
     CGFloat spacing = kSpacing;
     
     CGFloat height = 0.0f;
