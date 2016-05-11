@@ -47,7 +47,7 @@
 #define iPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 #endif
 
-#define kHostsCornerRadius 0f
+#define kHostsCornerRadius 0.f
 
 #define kSpacing 5.0f
 
